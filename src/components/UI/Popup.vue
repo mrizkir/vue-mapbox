@@ -87,7 +87,7 @@ export default {
     coordinates: {
       type: Array
     },
-    MaxWidth:{
+    maxwidth:{
       type:String,
       default:'240px'
     },
@@ -171,7 +171,7 @@ export default {
       this.popup = new this.mapbox.Popup(this.$props);
       if (this.coordinates !== undefined) {
         this.popup.setLngLat(this.coordinates);
-        this.popup.setMaxWidth(this.MaxWidth);
+        this.popup.setMaxWidth(this.maxwidth);
       }
       if (this.$slots.default !== undefined) {
         if (this.onlyText) {
