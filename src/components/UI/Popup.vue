@@ -87,7 +87,7 @@ export default {
     coordinates: {
       type: Array
     },
-    maxwidth:{
+    maxWidth:{
       type:String,
       default:'240px'
     },
@@ -138,7 +138,7 @@ export default {
     coordinates(lngLat) {
       if (this.initial) return;
       this.popup.setLngLat(lngLat);
-      this.popup.setMaxWidth(this.maxwidth);
+      this.popup.setMaxWidth(this.maxWidth);
     },
 
     showed(next, prev) {
@@ -172,7 +172,7 @@ export default {
       this.popup = new this.mapbox.Popup(this.$props);
       if (this.coordinates !== undefined) {
         this.popup.setLngLat(this.coordinates);
-        this.popup.setMaxWidth(this.maxwidth);
+        this.popup.setMaxWidth(this.maxWidth);
       }
       if (this.$slots.default !== undefined) {
         if (this.onlyText) {
