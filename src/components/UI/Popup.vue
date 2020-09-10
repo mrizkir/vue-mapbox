@@ -88,7 +88,7 @@ export default {
       type: Array
     },
     MaxWidth:{
-      type:string,
+      type:String,
       default:'240px'
     },
 
