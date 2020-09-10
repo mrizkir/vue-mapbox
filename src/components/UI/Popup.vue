@@ -138,6 +138,7 @@ export default {
     coordinates(lngLat) {
       if (this.initial) return;
       this.popup.setLngLat(lngLat);
+      this.popup.setMaxWidth(this.maxwidth);
     },
 
     showed(next, prev) {
